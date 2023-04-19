@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     # local
     "pages.apps.PagesConfig",
     "accounts.apps.AccountsConfig",
+    "books.apps.BooksConfig",
 ]
 
 MIDDLEWARE = [
@@ -151,7 +152,9 @@ AUTHENTICATION_BACKENDS = (
     "django.contrib.auth.backends.ModelBackend",
     "allauth.account.auth_backends.AuthenticationBackend",
 )
+
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
 ACCOUNT_SESSION_REMEMBER = True
 ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
 ACCOUNT_USERNAME_REQUIRED = False
